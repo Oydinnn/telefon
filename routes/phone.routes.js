@@ -1,5 +1,5 @@
 import express from "express";
-import Phone from "../models/Phone.js";
+import Phone from "../models/phone.model.js";
 
 const router = express.Router();
 

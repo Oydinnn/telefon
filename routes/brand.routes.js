@@ -15,7 +15,7 @@ router.get("/:id", async (req, res) => {
   res.json(await Brand.findById(req.params.id));
 });
 
-router.put("/:id", async (req, res) => {
+router.patch("/:id", async (req, res) => {
   res.json(await Brand.findByIdAndUpdate(req.params.id, req.body, { new: true }));
 });
 
